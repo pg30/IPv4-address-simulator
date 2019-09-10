@@ -36,7 +36,17 @@ public class MainUI extends javax.swing.JFrame {
         labelChooseClass = new javax.swing.JLabel();
         comboboxClass = new javax.swing.JComboBox<>();
         buttonSubmit = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
+        labelNetid = new javax.swing.JLabel();
+        panelBottom = new javax.swing.JPanel();
+        labelIcon1 = new javax.swing.JLabel();
+        labelIcon2 = new javax.swing.JLabel();
+        labelIcon3 = new javax.swing.JLabel();
+        labelIP1 = new javax.swing.JLabel();
+        labelSubnet1 = new javax.swing.JLabel();
+        labelIP2 = new javax.swing.JLabel();
+        labelSubnet2 = new javax.swing.JLabel();
+        labelIP3 = new javax.swing.JLabel();
+        labelSubnet3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Simulator");
@@ -67,17 +77,25 @@ public class MainUI extends javax.swing.JFrame {
         buttonSubmit.setFont(new java.awt.Font("Bradley Hand ITC", 1, 12)); // NOI18N
         buttonSubmit.setText("Submit");
 
+        labelNetid.setFont(new java.awt.Font("Bradley Hand ITC", 1, 14)); // NOI18N
+        labelNetid.setText("Network ID for selected Class is : ");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(labelChooseClass, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(comboboxClass, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34)
-                .addComponent(buttonSubmit)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(labelChooseClass, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(comboboxClass, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(34, 34, 34)
+                        .addComponent(buttonSubmit))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(166, 166, 166)
+                        .addComponent(labelNetid, javax.swing.GroupLayout.PREFERRED_SIZE, 482, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -87,18 +105,100 @@ public class MainUI extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelChooseClass)
                     .addComponent(comboboxClass)
-                    .addComponent(buttonSubmit)))
+                    .addComponent(buttonSubmit))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(labelNetid)
+                .addGap(14, 14, 14))
         );
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 956, Short.MAX_VALUE)
+        labelIcon1.setFont(new java.awt.Font("Bradley Hand ITC", 1, 14)); // NOI18N
+        labelIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ipv4/address/simulator/pcicon.jpg"))); // NOI18N
+        labelIcon1.setText(" PC1 :");
+
+        labelIcon2.setFont(new java.awt.Font("Bradley Hand ITC", 1, 14)); // NOI18N
+        labelIcon2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ipv4/address/simulator/pcicon.jpg"))); // NOI18N
+        labelIcon2.setText(" PC2 :");
+
+        labelIcon3.setFont(new java.awt.Font("Bradley Hand ITC", 1, 14)); // NOI18N
+        labelIcon3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ipv4/address/simulator/pcicon.jpg"))); // NOI18N
+        labelIcon3.setText(" PC3 :");
+
+        labelIP1.setFont(new java.awt.Font("Bradley Hand ITC", 1, 14)); // NOI18N
+        labelIP1.setText("IPv4 Address :");
+
+        labelSubnet1.setFont(new java.awt.Font("Bradley Hand ITC", 1, 14)); // NOI18N
+        labelSubnet1.setText("Subnet Mask :");
+
+        labelIP2.setFont(new java.awt.Font("Bradley Hand ITC", 1, 14)); // NOI18N
+        labelIP2.setText("IPv4 Address :");
+
+        labelSubnet2.setFont(new java.awt.Font("Bradley Hand ITC", 1, 14)); // NOI18N
+        labelSubnet2.setText("Subnet Mask :");
+
+        labelIP3.setFont(new java.awt.Font("Bradley Hand ITC", 1, 14)); // NOI18N
+        labelIP3.setText("IPv4 Address :");
+
+        labelSubnet3.setFont(new java.awt.Font("Bradley Hand ITC", 1, 14)); // NOI18N
+        labelSubnet3.setText("Subnet Mask :");
+
+        javax.swing.GroupLayout panelBottomLayout = new javax.swing.GroupLayout(panelBottom);
+        panelBottom.setLayout(panelBottomLayout);
+        panelBottomLayout.setHorizontalGroup(
+            panelBottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelBottomLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelBottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelBottomLayout.createSequentialGroup()
+                        .addComponent(labelIcon1)
+                        .addGap(18, 18, 18)
+                        .addGroup(panelBottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(labelIP1)
+                            .addComponent(labelSubnet1)))
+                    .addGroup(panelBottomLayout.createSequentialGroup()
+                        .addComponent(labelIcon2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(panelBottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(labelIP2)
+                            .addComponent(labelSubnet2)))
+                    .addGroup(panelBottomLayout.createSequentialGroup()
+                        .addComponent(labelIcon3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(panelBottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(labelIP3)
+                            .addComponent(labelSubnet3))))
+                .addContainerGap(915, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 435, Short.MAX_VALUE)
+        panelBottomLayout.setVerticalGroup(
+            panelBottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelBottomLayout.createSequentialGroup()
+                .addGroup(panelBottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(panelBottomLayout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(labelIcon1))
+                    .addGroup(panelBottomLayout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(labelIP1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(labelSubnet1)))
+                .addGroup(panelBottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelBottomLayout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addComponent(labelIcon2))
+                    .addGroup(panelBottomLayout.createSequentialGroup()
+                        .addGap(53, 53, 53)
+                        .addComponent(labelIP2)
+                        .addGap(18, 18, 18)
+                        .addComponent(labelSubnet2)))
+                .addGroup(panelBottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelBottomLayout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(labelIcon3))
+                    .addGroup(panelBottomLayout.createSequentialGroup()
+                        .addGap(52, 52, 52)
+                        .addComponent(labelIP3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(labelSubnet3)))
+                .addContainerGap(90, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -110,8 +210,8 @@ public class MainUI extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 44, Short.MAX_VALUE)))
+                        .addComponent(panelBottom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -121,7 +221,7 @@ public class MainUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(panelBottom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -166,9 +266,19 @@ public class MainUI extends javax.swing.JFrame {
     private javax.swing.JButton buttonSubmit;
     private javax.swing.JComboBox<String> comboboxClass;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel labelChooseClass;
     private javax.swing.JLabel labelHeading;
+    private javax.swing.JLabel labelIP1;
+    private javax.swing.JLabel labelIP2;
+    private javax.swing.JLabel labelIP3;
+    private javax.swing.JLabel labelIcon1;
+    private javax.swing.JLabel labelIcon2;
+    private javax.swing.JLabel labelIcon3;
+    private javax.swing.JLabel labelNetid;
+    private javax.swing.JLabel labelSubnet1;
+    private javax.swing.JLabel labelSubnet2;
+    private javax.swing.JLabel labelSubnet3;
+    private javax.swing.JPanel panelBottom;
     private javax.swing.JPanel panelHeading;
     // End of variables declaration//GEN-END:variables
 }
