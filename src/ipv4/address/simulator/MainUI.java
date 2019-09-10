@@ -10,7 +10,7 @@ import javax.swing.JFrame;
 
 /**
  *
- * @author PRANAY
+ * @author PRANAY GARG
  */
 public class MainUI extends javax.swing.JFrame {
 
@@ -21,6 +21,30 @@ public class MainUI extends javax.swing.JFrame {
         initComponents();
         setExtendedState(getExtendedState() | JFrame.MAXIMIZED_BOTH);
         this.setBackground(Color.white);
+        textIP1.setText("                   ");
+        textIP2.setText("                   ");
+        textIP3.setText("                   ");
+        textIP4.setText("                   ");
+        textIP5.setText("                   ");
+        textIP6.setText("                   ");
+        textIP7.setText("                   ");
+        textIP8.setText("                   ");
+        textIP9.setText("                   ");
+        textIP10.setText("                   ");
+        textIP11.setText("                   ");
+        textIP12.setText("                   ");
+        textSubnet1.setText("                   ");
+        textSubnet2.setText("                   ");
+        textSubnet3.setText("                   ");
+        textSubnet4.setText("                   ");
+        textSubnet5.setText("                   ");
+        textSubnet6.setText("                   ");
+        textSubnet7.setText("                   ");
+        textSubnet8.setText("                   ");
+        textSubnet9.setText("                   ");
+        textSubnet10.setText("                   ");
+        textSubnet11.setText("                   ");
+        textSubnet12.setText("                   ");
     }
 
     /**
